@@ -1,0 +1,55 @@
+a#wa_button {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  box-shadow: 2px 2px 11px #CCC;
+  border-radius: 50%; }
+
+div#wa_button_popup {
+  position: fixed;
+  left: -100%;
+  opacity: 0;
+  bottom: 60px;
+  padding: 22px 24px 20px;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10000000000000000000000;
+  background: #CCC;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 1s;
+  max-width: 90vw; }
+  div#wa_button_popup a.wa_close {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    line-height: 20px;
+    font-size: 30px;
+    color: #666;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  div#wa_button_popup span.wa_title {
+    font-size: 1rem;
+    padding: 10px 0;
+    font-weight: bold; }
+  div#wa_button_popup form#wa_form span {
+    display: flex; }
+  div#wa_button_popup form#wa_form label {
+    font-weight: normal; }
+  div#wa_button_popup form#wa_form input#wa_message {
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 5px;
+    width: 240px;
+    padding: 0 25px; }
+  div#wa_button_popup form#wa_form button {
+    background: transparent;
+    border: none; }
+
+body.wa_show_popup div#wa_button_popup {
+  opacity: 1;
+  left: 20px; }
